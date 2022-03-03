@@ -1,0 +1,42 @@
+*{
+    margin: auto;
+ }
+ 
+ :root {
+     --text-base: #004fa7;
+     --text-title: #d4ccb6;
+     --background: #191816;
+     --form-background: #24221f;
+     --primary-color: #ffc632;
+   }
+ 
+ .text-title{
+     color:#d4ccb6;
+     margin-top: 20px;
+ }
+ 
+ 
+ #content1 {
+     height: 100vh;
+     margin: 15px;
+ }
+ 
+ .margin-top {
+     margin-top: 30px;
+ }
+ 
+ form{
+   margin-top: 20px;
+ }
+
+ #email,#password{
+    padding: 7px;
+    width: 95%; 
+ }
+#checkbox{
+ display:inline;
+}
+
+span#forgetPassword {
+ display:inline;
+}
