@@ -1,42 +1,94 @@
-*{
-    margin: auto;
- }
- 
- :root {
-     --text-base: #004fa7;
-     --text-title: #d4ccb6;
-     --background: #191816;
-     --form-background: #24221f;
-     --primary-color: #ffc632;
-   }
- 
- .text-title{
-     color:#d4ccb6;
-     margin-top: 20px;
- }
- 
- 
- #content1 {
-     height: 100vh;
-     margin: 15px;
- }
- 
- .margin-top {
-     margin-top: 30px;
- }
- 
- form{
-   margin-top: 20px;
- }
+:root {
+  --text-base: #004fa7;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --text-gray: #AFB6C2;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
 
- #email,#password{
-    padding: 7px;
-    width: 95%; 
- }
-#checkbox{
- display:inline;
+body {
+  background-color: var(--background);
+}
+
+.text-title{
+  color: var(--text-title);
+}
+.text-subtitle{
+
+  color: var(--text-gray);
+}
+
+label {
+  color: var(--text-gray);
+}
+#content1 {
+  height: 100vh;
+  margin: 15px;
+}
+
+.margin-top {
+  margin-top: 28px;
+}
+
+form {
+margin-top: 20px;
+color: var(--text-gray);
+}
+
+#email {
+  margin-bottom: 25px;
+}
+
+#password {
+ margin-bottom: 5px;
+}
+
+#email,#password{
+ padding: 12px;
+ width: 94%; 
+ border-radius: 7px;
+ border: 1px solid var(--text-gray);
+ margin-top: 5px;
+ background-color: var(--background);
+}
+
+#button-send {
+ padding:15px;
+ margin-bottom: 10px;
+ width: 100%;
+}
+
+#register-text{
+  display:flex;
+  justify-content: center;
+}
+
+
+input#checkbox {
+    margin-bottom: 35px;
+    margin-top: 10px;
+    transform: scale(1.3);
+}
+
+span,a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a {
+ font-weight: bold;
+ margin-left: 7px;
 }
 
 span#forgetPassword {
- display:inline;
+    float: right;
+    margin-top: 10px;
+}
+
+button#button-send {
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    border-radius: 7px; 
+    border: none;
 }
