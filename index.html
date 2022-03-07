@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/index.css">
     <title>Tela de Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Serif:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="content1" class="--form-background">
@@ -15,11 +18,13 @@
         <div id="form">
             <form>
                 <label>E-mail</label><br>
-                <input id="email" type="email" placeholder="Digite seu email"> <br>
+                <input id="email" autocomplete="off" type="email" placeholder="Digite seu email"> <br>
                 <label>Senha</label><br>
                 <input id="password" type="password" placeholder="Digite sua senha"> </input><br>
-                <input id="checkbox" type="checkbox"> Lembre-me </input>
-                <span id="forgetPassword">Esqueci minha senha</span> <br>
+                <input type="checkbox" checked="checked">
+                <label class="conteiner" for="checkbox">Lembre-me</label>
+                <span class="checkmark"></span>
+                <span id="forgetPassword"> <a href="index.html"> Esqueci minha senha </a></span> <br>
                 <button id="button-send" type="send">Entrar</button>
                 <span id="register-text"> Não tem uma conta? <a href="./index.html"> Registre-se</span></a>
             </form>
@@ -29,3 +34,4 @@
     <div id="content2"></div>
 </body>
 </html>
+

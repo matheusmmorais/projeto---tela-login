@@ -15,7 +15,6 @@ body {
   color: var(--text-title);
 }
 .text-subtitle{
-
   color: var(--text-gray);
 }
 
@@ -38,19 +37,45 @@ color: var(--text-gray);
 
 #email {
   margin-bottom: 25px;
+  background-image: url('../img/mail.svg');
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
 }
 
 #password {
  margin-bottom: 5px;
+ background-image: url('../img/lock.svg');
+ background-position: 10px 8px;
+ background-repeat: no-repeat;
+}
+
+#email:focus {
+  background-image: url('../img/mail-focus.svg');
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
+}
+
+#password:focus {
+  background-image: url('../img/lock-focus.svg');
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
 }
 
 #email,#password{
  padding: 12px;
- width: 94%; 
+ width: 100%; 
  border-radius: 7px;
  border: 1px solid var(--text-gray);
  margin-top: 5px;
  background-color: var(--background);
+ color: white;
+ padding-left: 40px;
+ box-sizing: border-box;
+}
+
+#email:focus, #password:focus {
+ border: none;
+ outline: 2px solid var(--primary-color);
 }
 
 #button-send {
@@ -92,3 +117,134 @@ button#button-send {
     border-radius: 7px; 
     border: none;
 }
+
+
+
+
+
+
+:root {
+  --text-base: #004fa7;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --text-gray: #AFB6C2;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.text-title{
+  color: var(--text-title);
+}
+.text-subtitle{
+  color: var(--text-gray);
+}
+
+label {
+  color: var(--text-gray);
+}
+#content1 {
+  height: 100vh;
+  margin: 15px;
+}
+
+.margin-top {
+  margin-top: 28px;
+}
+
+form {
+margin-top: 20px;
+color: var(--text-gray);
+}
+
+#email {
+  margin-bottom: 25px;
+  background-image: url('../img/mail.svg');
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
+}
+
+#password {
+ margin-bottom: 5px;
+ background-image: url('../img/lock.svg');
+ background-position: 10px 8px;
+ background-repeat: no-repeat;
+}
+
+#email:focus {
+  background-image: url('../img/mail-focus.svg');
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
+}
+
+#password:focus {
+  background-image: url('../img/lock-focus.svg');
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
+}
+
+#email,#password{
+ padding: 12px;
+ width: 100%; 
+ border-radius: 7px;
+ border: 1px solid var(--text-gray);
+ margin-top: 5px;
+ background-color: var(--background);
+ color: white;
+ padding-left: 40px;
+ box-sizing: border-box;
+}
+
+#email:focus, #password:focus {
+ border: none;
+ outline: 2px solid var(--primary-color);
+}
+
+#button-send {
+ padding:15px;
+ margin-bottom: 10px;
+ width: 100%;
+}
+
+#register-text{
+  display:flex;
+  justify-content: center;
+}
+
+
+input#checkbox {
+    margin-bottom: 35px;
+    margin-top: 10px;
+    transform: scale(1.3);
+}
+
+span,a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a {
+ font-weight: bold;
+ margin-left: 7px;
+}
+
+span#forgetPassword {
+    float: right;
+    margin-top: 10px;
+}
+
+button#button-send {
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    border-radius: 7px; 
+    border: none;
+}
+
+
+
+
+
+
