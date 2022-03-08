@@ -362,3 +362,29 @@ button#button-send {
 
 } }
 
+ /* Small Devices, Tablets */
+ @media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  #conteiner{
+    display:flex;
+    justify-content: space-between;
+}
+ 
+ #content1{
+  background-color: gray;
+  }
+ 
+  #content2{
+   display: flex;
+   flex: 1;
+   background-color: red;
+  }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
